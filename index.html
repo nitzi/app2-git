@@ -1,0 +1,319 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicación</title>
+
+  <!-- grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sust1.jpg','imagenes/sust2.jpg')">
+   
+   <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> Telefonía celular </h1>
+    </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1> Celular 1</h1>
+       <div>
+         <p> Samsung Galaxy J7: </p>
+         <br>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/sust1.jpg',1)"><img src="imagenes/celular1.jpg" width="50%" height="50%" id="Image4"></a> </div>
+      </div>
+     </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1> Celular 2</h1>
+       <div>
+         <p> Samsung Note 3: </p>
+         <br>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/sust2.jpg',1)"><img src="imagenes/celular2.jpg" width="50%" height="50%" id="Image5"></a> </div>
+      </div>
+       </div>
+     <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> DEFINICION </h2>
+             <p> Se muestra la definicion del telefono celular </p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2> HISTORIA </h2>
+             <p> Se muestra la historia de la telefonia </p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2> CLASIFICACION DE LOS CELULARES </h2>
+            <p> Muestra la clasificacion de los celulares </p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2> COMPAÑIAS </h2>
+            <p> Muestra el servicio de telefonia que ofrecen las compañias en Mexico  </p>
+          </a>
+       </li>
+       </ul>
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/celular1.jpg" alt="celular1" title="celular1" id="wows1_0"/></li>
+		<li><img src="data1/images/celular2.jpg" alt="celular2" title="celular2" id="wows1_1"/></li>
+		<li><img src="data1/images/conectados.jpg" alt="conectados" title="conectados" id="wows1_2"/></li>
+		<li><img src="data1/images/ip.jpg" alt="ip" title="ip" id="wows1_3"/></li>
+		<li><img src="data1/images/lg.jpg" alt="lg" title="lg" id="wows1_4"/></li>
+		<li><img src="data1/images/moto.jpg" alt="moto" title="moto" id="wows1_5"/></li>
+		<li><img src="data1/images/pri.jpg" alt="pri" title="pri" id="wows1_6"/></li>
+		<li><img src="data1/images/seg.jpg" alt="seg" title="seg" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/sust1.jpg" alt="wowslider.com" title="sust1" id="wows1_8"/></a></li>
+		<li><img src="data1/images/sust2.jpg" alt="sust2" title="sust2" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="celular1"><span><img src="data1/tooltips/celular1.jpg" alt="celular1"/>1</span></a>
+		<a href="#" title="celular2"><span><img src="data1/tooltips/celular2.jpg" alt="celular2"/>2</span></a>
+		<a href="#" title="conectados"><span><img src="data1/tooltips/conectados.jpg" alt="conectados"/>3</span></a>
+		<a href="#" title="ip"><span><img src="data1/tooltips/ip.jpg" alt="ip"/>4</span></a>
+		<a href="#" title="lg"><span><img src="data1/tooltips/lg.jpg" alt="lg"/>5</span></a>
+		<a href="#" title="moto"><span><img src="data1/tooltips/moto.jpg" alt="moto"/>6</span></a>
+		<a href="#" title="pri"><span><img src="data1/tooltips/pri.jpg" alt="pri"/>7</span></a>
+		<a href="#" title="seg"><span><img src="data1/tooltips/seg.jpg" alt="seg"/>8</span></a>
+		<a href="#" title="sust1"><span><img src="data1/tooltips/sust1.jpg" alt="sust1"/>9</span></a>
+		<a href="#" title="sust2"><span><img src="data1/tooltips/sust2.jpg" alt="sust2"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+          <img src="imagenes/logo.png" width="46" height="46">
+        </div>
+        <div>
+          <h4> Aplicacion Dos </h4>
+          <h4> Nitzi Sanchez Cilia </h4>
+        </div>
+      </div>
+      </div>
+      <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+           <h1> Definicion </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2> Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil. En tanto, la denominación celular tiene su razón de ser en que cada una de las antenas repetidoras, que forman parte de la red, son células. El rasgo diferencial que ostenta el teléfono celular por sobre los otros tipos de teléfono es su fácil portación, en la cartera, en el bolso, incluso en los bolsillos del pantalón o pollera, los seres humanos que formamos parte de esta comunidad conectada celularmente podemos llevar con nosotros y a cualquier lado este tipo de teléfono porque no pesan casi nada.</h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Celular inalambrico </h1>
+       <div>
+         <img src="imagenes/celular1.jpg" width="50%" height="50%">
+       </div>
+       </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Celulares conectados en todo el mundo </h1>
+       <div>
+         <img src="imagenes/conectados.jpg" width="50%" height="50%">
+       </div>
+       </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> El celular cabe en pequeños lugares </h1>
+       <div>
+         <img src="imagenes/peq.jpg" width="50%" height="50%">
+       </div>
+       </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+              <img src="imagenes/logo.png" width="46" height="46">
+           </div>
+           <h4> Aplicacion Dos, NSC </h4>
+        </div>
+      </div>
+      
+      
+      <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+           <h1> Historia </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2>En aquellos primeros tiempos, eran utilizadas las bandas de HF y VHF, con el fin de ofrecerle a la población un medio de comunicación móvil, que podían llevar consigo al salir de sus casas y oficinas, lo que implicaba lograr mantener una comunicación constante.
+                No obstante, es importante señalar que en la década de los 80s estos aparatos representaron una evolución sin precedentes dentro de las comunicaciones móviles, y para su época significaron un gran avance, ya que a partir de la denominada primera generación, las terminales se volvieron más pequeñas, lo que permitía que los usuarios pudieran trasladar sus equipos de comunicación.
+                Después de diversas investigaciones para mejorar aún más las prestaciones y servicios que se brindaban en el ámbito de las comunicaciones móviles para mediados de la década de los 80s, la tecnología experimentó una profunda evolución con el surgimiento de la denominada Segunda Generación, más conocida como 2G.
+                Con la llegada de la tecnología de Segunda Generación al mundo de las comunicaciones móviles, también desembarcó en los dispositivos portátiles de telefonía celular el popular sistema GSM, siglas de su nombre en inglés Global System for Mobile Communications, que en español significa Sistema Global para las Comunicaciones. Con la llegada de la generación de transición, que dio un paso previo durante la espera de la 3G, se introdujeron importantes cambios dentro del ámbito de la telefonía celular, incrementando los servicios que hasta el momento ofrecía la 2G. Con el advenimiento de la Tercera Generación, fruto de la investigación para lograr aumentar la capacidad de transmisión y recepción de datos, además de obtener un mejor grado de seguridad en las comunicaciones, fue posible poder contar con la posibilidad de conectarse a Internet con todas las ventajas que su utilización provee para los usuarios. La llegada al mercado de esta tecnología le ofrece al usuario una experiencia de uso absolutamente exitosa con cualquier prestación que solicite, incluyendo la inscripción a servicios como Spotify, Netfix o Google Music para disfrutar de contenidos de audio y series o películas en alta definición y sin cortes, todo gracias a la alta velocidad que puede alcanzar el estándar, y sin necesidad de contar con una fuente de señal Wi-Fi cercana. Además del factor determinante relacionado al aumento de la velocidad y de la convergencia que supone el sistema, otro punto importante a destacar reside en que el nuevo estándar ofrece superiores niveles de calidad de servicio en toda la extensión de la comunicación, es decir, se brindará una cobertura de seguridad entre las dos puntas de las terminales.  </h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Primeros celulares </h1>
+       <div>
+         <img src="imagenes/pri.jpg" width="50%" height="50%">
+       </div>
+       </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Segundos celulares </h1>
+       <div>
+         <img src="imagenes/seg.jpg" width="50%" height="50%">
+       </div>
+       </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Terceros celulares </h1>
+       <div>
+         <img src="imagenes/ter.jpg" width="50%" height="50%">
+       </div>
+       </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+              <img src="imagenes/logo.png" width="46" height="46">
+           </div>
+           <h4> Aplicacion Dos, NSC </h4>
+        </div>
+      </div>
+
+
+
+      <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+           <h1> Clasificacion de los celulares </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2> Gama baja </h2>
+          </div>
+          <div>
+            <h2> Son los teléfonos que son de bajo precio, ya que estos no son del todo buenos o mejores, porque sus características que ofrece el telefono son sencillas. Como lo es su procesador que es muy lento, su memoria es poca, solo tiene una cámara y esta no es de buena calidad.  </h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> Ejemplo de gama baja</h1>
+        <div>
+         <img src="imagenes/lg.jpg" width="50%" height="50%">
+       </div>
+       </div>
+         <div>
+            <h2>Gama media</h2>
+         </div>
+          <div>
+            <h2> Son los teléfonos que son de precio no tan bajo pero tampoco tan alto, son como dice su nombre el medio de todo, su procesador no es ni muy lento ni muy rápido, tiene dos cámaras y una de ellas es buena por lo regular es la cámara trasera y su memoria no es mucha es regular. </h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Ejemplo de gama media </h1>
+       <div>
+         <img src="imagenes/moto.jpg" width="50%" height="50%">
+       </div>
+       </div>
+         <div>
+            <h2>Gama alta</h2>
+         </div>
+          <div>
+            <h2> Son los teléfonos que son de precio muy alto, ya que son muy buenos, su procesador es muy rápido, tiene dos cámaras y las dos son de excelente calidad, una memoria muy pero muy grande y también son aquellos que no se les introduce el virus muy rápido. </h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Ejemplo de gama alta </h1>
+       <div>
+         <img src="imagenes/ip.jpg" width="50%" height="50%">
+       </div>
+       </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+              <img src="imagenes/logo.png" width="46" height="46">
+           </div>
+           <h4> Aplicacion Dos, NSC </h4>
+        </div>
+      </div>       
+
+
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+           <h1> Compañías telefónicas </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2> TELCEL </h2>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> Logo de la compañía</h1>
+        <div>
+         <img src="imagenes/telcel.jpg" width="50%" height="50%">
+       </div>
+       </div>
+         <div>
+            <h2>MOVISTAR</h2>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Logo de la compañía </h1>
+       <div>
+         <img src="imagenes/movistar.jpg" width="50%" height="50%">
+       </div>
+       </div>
+         <div>
+            <h2>UNEFON</h2>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Logo de la compañía</h1>
+       <div>
+         <img src="imagenes/unefon.jpg" width="50%" height="50%">
+       </div>
+       </div>
+         <div>
+            <h2>NEXTEL</h2>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+      <h1> Logo de la compañía </h1>
+       <div>
+         <img src="imagenes/nextel.jpg" width="50%" height="50%">
+       </div>
+       </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+              <img src="imagenes/logo.png" width="46" height="46">
+           </div>
+           <h4> Aplicacion Dos, NSC </h4>
+        </div>
+      </div>
+</body>
+</html>
